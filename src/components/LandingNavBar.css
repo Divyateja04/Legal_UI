@@ -1,0 +1,72 @@
+/* ======== LANDING PAGE NAVBAR ======== */
+
+.landing-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e9f5;
+  padding: 15px 0;
+  z-index: 999;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+}
+
+.ln-container {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand */
+.ln-brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2266ff;
+  cursor: pointer;
+}
+
+/* Links List */
+.ln-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.ln-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.ln-links li a:hover {
+  color: #2266ff;
+}
+
+/* CTA Button */
+.ln-cta-btn {
+  background: #2266ff;
+  padding: 10px 26px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.ln-cta-btn:hover {
+  background: #1957e0;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 900px) {
+  .ln-links {
+    display: none;
+  }
+
+  .ln-cta-btn {
+    padding: 8px 20px;
+  }
+}

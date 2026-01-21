@@ -1,0 +1,442 @@
+/* Global Reset */
+.homepage {
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 80px;
+  background: white;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.blue-gradient {
+  background: linear-gradient(90deg, #2d67ff, #0097ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-sub {
+  margin-top: 20px;
+  color: #475569;
+  font-size: 1.2rem;
+  max-width: 550px;
+}
+
+.primary-btn {
+  background: #2266ff;
+  padding: 14px 32px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.secondary-btn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  border: 2px solid #cdd6f8;
+  text-decoration: none;
+  color: #1e293b;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.hero-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  font-weight: 600;
+  margin-bottom: 20px;
+  width: 260px;
+}
+
+.hero-card-1 { transform: translate(20px, 0); }
+.hero-card-2 { transform: translate(60px, 20px); }
+.hero-card-3 { transform: translate(40px, 40px); }
+
+.hero-blur-bg {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: #bcd5ff;
+  border-radius: 50%;
+  filter: blur(120px);
+  top: 20px;
+  left: -40px;
+  opacity: 0.6;
+}
+
+/* ---------------- FEATURES ---------------- */
+.features {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.section-sub {
+  font-size: 1.15rem;
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  border: 1px solid #e5ebfb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-icon {
+  font-size: 50px;
+  color: #2266ff;
+}
+
+/* ---------------- HOW IT WORKS ---------------- */
+.workflow {
+  background: #f1f5ff;
+  padding: 100px 60px;
+}
+
+.workflow-grid {
+  display: flex;
+  gap: 28px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.workflow-box {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  width: 300px;
+  border: 1px solid #dbe4ff;
+  text-align: center;
+}
+
+.workflow-num {
+  font-size: 2rem;
+  color: #2266ff;
+  font-weight: 800;
+}
+
+/* ---------------- SHOWCASE ---------------- */
+.showcase {
+  padding: 120px 60px;
+}
+
+.showcase-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.show-panel {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  font-weight: 600;
+  border: 1px solid #e5ecff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* ---------------- USE CASES ---------------- */
+.usecases {
+  background: #f8faff;
+  padding: 100px 60px;
+}
+
+.usecase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.usecase-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  border: 1px solid #e6ebff;
+}
+
+/* ========== TESTIMONIALS PRO ========== */
+.testimonials-pro {
+  padding: 120px 60px;
+  text-align: center;
+}
+
+/* 3 per row on desktop */
+.testimonials-grid-3 {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* Testimonial Card */
+.testimonial-pro-card {
+  background: white;
+  padding: 45px 35px;
+  border-radius: 20px;
+  border: 1px solid #dbe4ff;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.testimonial-pro-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.10);
+}
+
+/* Avatar Circle */
+.tp-avatar {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #2d67ff, #0097ff);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.10);
+}
+
+/* Testimonial Text */
+.tp-text {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Name */
+.tp-name {
+  font-weight: 600;
+  color: #1e40af;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  .testimonials-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------- CTA ---------------- */
+.cta {
+  background: linear-gradient(120deg, #4573e7, #0097ff);
+  color: white;
+  padding: 140px 60px;
+  text-align: center;
+  border-radius: 0;
+}
+
+.cta-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+
+.cta-sub {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+  background: #f1f3f9;
+  padding: 30px;
+  text-align: center;
+  color: #64748b;
+}
+/* ========== NEW HOW IT WORKS SECTION ========== */
+.steps-section {
+  padding: 120px 60px;
+  background: #f7faff;
+  text-align: center;
+}
+
+.steps-flow {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  background: white;
+  width: 300px;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #e2e8ff;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+  transition: 0.25s;
+}
+.step-card:hover {
+  transform: translateY(-10px);
+}
+
+.step-icon {
+  font-size: 45px;
+  color: #2166ff;
+  margin-bottom: 20px;
+}
+/* ========== SHOWCASE PRO (3×2 GRID VERSION) ========== */
+.showcase-pro {
+  padding: 120px 60px;
+  text-align: center;
+}
+
+/* 3 cards per row */
+.showcase-pro-grid-3 {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* FIXED 3 COLUMNS */
+  gap: 40px 30px; /* vertical gap | horizontal gap */
+}
+
+/* Card design stays the same */
+.showcase-pro-card {
+  position: relative;
+  background: white;
+  padding: 55px 35px 40px;
+  border-radius: 22px;
+  border: 1px solid #dbe6ff;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.showcase-pro-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+}
+
+/* Gradient Icon */
+.sp-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #2d67ff, #0097ff);
+  color: white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+}
+
+/* Text */
+.showcase-pro-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f3aa8;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.showcase-pro-card p {
+  color: #475569;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 992px) {
+  .showcase-pro-grid-3 {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .showcase-pro-grid-3 {
+    grid-template-columns: 1fr; /* 1 item per row on mobiles */
+  }
+
+  .sp-icon {
+    left: 20px;
+  }
+}
+
+/* ========== NEW USE CASES ========== */
+.usecases-new {
+  background: #f8fbff;
+  padding: 120px 60px;
+  text-align: center;
+}
+
+.usecases-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.usecases-card {
+  background: linear-gradient(145deg, #ffffff, #eef4ff);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid #dbe4ff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: .3s;
+}
+
+.usecases-card:hover {
+  transform: translateY(-10px);
+}
+
+.uc-icon {
+  font-size: 45px;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
